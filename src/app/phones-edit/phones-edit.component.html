@@ -1,0 +1,15 @@
+<app-student-detail></app-student-detail>
+<div id="inputPhones" class="inputForm">
+  <header class="activeCaption">Телефоны</header>
+  <button class="closeBtn" (click)="goBack()">x</button>
+  <div class="inputPhBgrnd">
+    <p>{{phone1}} {{phone2}}</p>
+    <label>Основной: <input (keyup)="change1(phone1)" [(ngModel)]="phone1" placeholder="phone1"/></label>
+    <label>Дополнительный: <input (keyup)="change2(phone2)" [(ngModel)]="phone2" placeholder="phone2"/></label>
+  </div>
+</div>
+
+
+
+
+

@@ -1,0 +1,26 @@
+.inputPhBgrnd {
+  padding-top: 17px;
+  height: 59px;
+}
+
+#inputPhones {
+  position: absolute;
+  left: 39%;
+  top: 202px;
+  height: 108px;
+}
+
+#inputPhones input {
+  margin: 0px 10px 0px 10px;
+  -ms-grid-row-align: end;
+  align-self: end;
+  width: 100px;
+  font-size: 8px;
+}
+
+p{
+  margin: -11px 5px 0px 5px;
+  display: block;
+  height: 13px;
+  text-align: center;
+}

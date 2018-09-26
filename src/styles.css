@@ -1,1 +1,82 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  /*border: 1px solid red;*/
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+
+
+.inputForm{
+  font-size: 8px;
+  width: 222px;
+  position: relative;
+  font-family: sans-serif;
+  position: relative;
+  background-color: #c9d7e5;
+  border: 1px solid black;
+  border-radius: 4px 4px 0px 0px;
+}
+
+
+.activeCaption {
+  margin: 3px 0px 0px 4px;
+}
+
+.closeBtn{
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 32px;
+  height: 18px;
+  border: 1px solid #838ea8;
+  font-family: sans-serif;
+  color: whitesmoke;
+  border-radius: 2px;
+  text-shadow: 0px 0px 4px #000000;
+  outline: none;
+  background-color: brown;
+}
+
+.closeBtn:hover{
+  border: 1px solid #000000;
+  color: black;
+}
+
+
+.inputStBgrnd,.inputPhBgrnd {
+  width: 212px;
+  position: absolute;
+  border: 1px solid #000000;
+  top: 26px;
+  left: 4px;
+  background-color: #f0f0f0;
+}
+
+label {
+  margin: 5px;
+  display: block;
+  text-align: right;
+}
+
+button{
+  text-transform: uppercase;
+  font-size: 8px;
+  height: 25px;
+  margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+

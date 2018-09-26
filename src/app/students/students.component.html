@@ -1,0 +1,35 @@
+
+<div id="question">
+  <label>Введите количество студентов в будущей группе: <input #studentsQuantity id="quantityOfStudents" type="text"></label>
+  <button id="quantityOfStudentsBtn">ВВОД</button>
+
+</div>
+
+<table>
+  <caption>Таблица студентов из {{students.length}} строк:</caption>
+  <thead>
+  <tr>
+    <th scope="col">№ id</th>
+    <th scope="col">имя</th>
+    <th scope="col">фамилия</th>
+    <th scope="col">возраст</th>
+    <th scope="col">телефон1</th>
+    <th scope="col">телефон2</th>
+    <th scope="col">удалить</th>
+  </tr>
+  </thead>
+  <tbody>
+
+      <tr *ngFor="let student of students">
+
+        <td  data-label="id"><a routerLink="/detail/{{student.id}}" title="редактировать">{{student.id}}</a></td>
+          <td data-label="firstName">{{student.firstName}}</td>
+          <td data-label="lastName">{{student.lastName}}</td>
+          <td data-label="age">{{student.age}}</td>
+          <td data-label="phone1">{{student.phone1}}</td>
+          <td data-label="phone2">{{student.phone2}}</td>
+          <button class="deleteLine" title="delete student" (click)="delete(student)">x</button>
+      </tr>
+  </tbody>
+</table>
+<app-student-search></app-student-search>

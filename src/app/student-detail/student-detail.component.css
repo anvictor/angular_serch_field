@@ -1,0 +1,32 @@
+.inputStBgrnd {
+  height: 152px;
+}
+
+#inputStudent {
+  position: absolute;
+  left: 38%;
+  top: 50px;
+  height: 184px;
+}
+
+#inputStudent input {
+  margin: 0px 10px 0px 10px;
+  -ms-grid-row-align: end;
+  align-self: end;
+  width: 130px;
+  font-size: 8px;
+}
+#line1 {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+#line3{
+  margin-top: 20px;
+  display: flex;
+}
+
+#line3 p{
+  margin: auto;
+}

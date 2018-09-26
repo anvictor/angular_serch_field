@@ -1,0 +1,27 @@
+<app-students></app-students>
+
+<div id="inputStudent" class="inputForm" *ngIf="student">
+  <header class="activeCaption">Карточка студента</header>
+  <button class="closeBtn" (click)="goBack()">x</button>
+  <div class="inputStBgrnd">
+    <div id="line1">
+      <p id="studentId">id: <span>{{student.id}}</span></p>
+      <button id="saveStudentBtn" (click)="save()">save</button>
+    </div>
+    <div id="line2">
+
+
+      <label>Имя:<input  [(ngModel)]="student.firstName" placeholder="firstName"/></label>
+      <label>Фамилия:<input [(ngModel)]="student.lastName" placeholder="lastName"/></label>
+      <label>Возраст:<input [(ngModel)]="student.age" placeholder="age"/></label>
+    </div>
+    <div id="line3">
+      <a routerLink="/detail/{{student.id}}/phones-edit" (click)="editPhones(student.phone1, student.phone2)" title="редактировать"><button id="addPhonesBtn">Телефоны:</button></a>
+
+      <p class="phones">{{[student.phone1]}}</p>
+      <p class="phones">{{[student.phone2]}}</p>
+    </div>
+
+  </div>
+</div>
+
